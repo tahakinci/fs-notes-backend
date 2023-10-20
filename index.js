@@ -40,10 +40,10 @@ app.get("/api/notes/:id", (req, res) => {
 });
 
 app.post("/api/notes", (req, res) => {
-  const body = request.body;
+  const body = req.body;
 
   if (!body.content) {
-    return response.status(400).json({
+    return res.status(400).json({
       error: "content missing",
     });
   }
@@ -56,7 +56,7 @@ app.post("/api/notes", (req, res) => {
 
   notes = notes.concat(note);
 
-  response.json(note);
+  res.json(note);
 });
 
 app.delete("/api/notes/:id", (req, res) => {
