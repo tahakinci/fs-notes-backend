@@ -1,6 +1,7 @@
 GET http://localhost:3001/api/notes
 
 ###
+# POST
 POST http://localhost:3001/api/notes
 Content-Type: application/json
 
@@ -10,5 +11,6 @@ Content-Type: application/json
 }
 
 ###
+# DELETE
 DELETE http://localhost:3001/api/notes/2
 
