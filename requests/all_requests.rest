@@ -14,3 +14,12 @@ Content-Type: application/json
 # DELETE
 DELETE http://localhost:3001/api/notes/2
 
+###
+PUt http://localhost:3001/api/notes/6536395d23b27186bf6c7d40
+Content-Type: application/json
+
+{
+    "content": "This id has updated",
+    "important": true
+}
+
