@@ -23,3 +23,12 @@ Content-Type: application/json
     "important": true
 }
 
+###
+# Login
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "taha akinci",
+    "password": "deneme123"
+}

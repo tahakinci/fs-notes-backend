@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const usersRouter = require("express").Router();
 const User = require("../models/user");
 
@@ -19,7 +19,7 @@ usersRouter.post("/", async (req, res, next) => {
   const user = new User({
     username,
     name,
-    password,
+    passwordHash,
   });
 
   const savedUser = await user.save();
